@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+body {
+    background-image: url(../images/12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.heart{position:absolute;top:-50%;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-m-transform:rotate(-45deg);transform:rotate(-45deg)}
+.heart:before{position:absolute;top:-50%;left:-1;display:block;content:"";width:100%;height:100%;background:inherit;border-radius:100%;}
+.heart:after{position:absolute;top:0;right:-50%;display:block;content:"";width:100%;height:100%;background:inherit;border-radius:100%;}
+
+@-webkit-keyframes love {
+  0%{top:60%}
+}
+@-moz-keyframes love {
+  0%{top:60%}
+}
+@-ms-keyframes love {
+  0%{top:60%}
+}
+@keyframes love {
+  0%{top:60%}
+}
+
+
+
+/**************nav bar*****************/
+nav .collapse {
+    margin-left: 50%;
+    transition: all 0.8s ease-in-out;
+}
+nav {
+    height: 85px;
+}
+.navbar{
+    background: linear-gradient(to right,rgba(128, 0, 128, 0),rgba(0, 0, 255, 0.2),rgba(128, 0, 128, 1));
+}
+.nav-item a:hover {
+    font-size: 20px;
+    border-radius: 15%;
+    font-style: italic;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(20%);
+}
+
+.nav-item {
+    padding-right: 20px;
+}
+@media (max-width: 920px) {
+    .nav-item:hover {
+        border-radius: none;
+        color: none;
+        background: none;
+}
+nav {
+    height: 100%;
+}
+.collapse {
+    margin-left: 30%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+}
+/**************end*****************/
+
+
+
+/**************الصور المتحركة*****************/
+.kodfun-galeri{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+   }
+   .kodfun-galeri > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    margin-top: 15%;
+   }
+   .kodfun-galeri > div:hover {
+    flex: 20;
+   }
+
+
+/**************end*****************/
+
+
+
+/**************الأختيارات*****************/
+.full {
+    padding-right: 50px;
+    margin: 90px auto;
+
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+}
+.tabs .fa-heart-crack {
+    background: linear-gradient(90deg, #ff0000,#ffff00,#ff00f3,white,#ffff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+    font-size: 25px;
+}
+.tabs .fa-face-meh-blank {    background: linear-gradient(90deg, #ff0000,#ffff00,white,#0033ff,#ff00c4,#ffff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+    font-size: 25px;
+}
+.tabs .fa-face-smile-beam {
+    background: linear-gradient(90deg, #ff0000,#ffff00,#ff00f3,#0033ff,white,#ffff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+    font-size: 25px;
+}
+
+
+
+.tabs li {
+    padding: 10px 20px;
+    background-color: green;
+    margin: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.tabs li.active,
+.tabs li:hover {
+    background-color: rgba(255, 255, 0, 0.753);
+    color: white;
+}
+
+.content {
+    background-color: rgba(0, 128, 0, 0.521);
+    border-radius: 10px;
+    color: yellow;
+}
+
+.content > div {
+    padding: 10px;
+    display: flex;
+    
+}
+
+.content > div:not(:first-child) {
+    display: none;
+}
+/**************end*****************/
+
+
+
+/**************========*****************/
+.write {
+    font-size: 35px;
+    background: linear-gradient(90deg, #ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ffff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+
+
+/**************end*****************/
+
+
+
+
+
+

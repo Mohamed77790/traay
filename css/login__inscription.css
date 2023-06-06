@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+body {
+    background-image: url(../images/12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content {
+    margin-top: 50px;
+}
+.content > div:not(:first-child) {
+    display: none;
+}
+
+
+
+
+/**************nav bar*****************/
+.nav {
+    height: 80px;
+    letter-spacing: 4px;
+}
+@media (max-width: 920px) {
+.nav {
+    height: 100%;
+}
+}
+.ul_1 {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ul_1 li.active,
+.ul_1 li:hover {
+    background-color: rgba(255, 255, 255, 0.425);
+    border-radius: 5px;
+}
+.li_1 {
+    margin-right: 12px;
+    color: white;
+    list-style-position: inside;
+    flex-grow: 1;
+    text-align: center;
+    transition: 0.7s;
+}
+/**************end*****************/
+
+
+
+/***************inscription***************/
+.part_1 {
+    margin-top: 2%;
+    text-align: right;
+}
+.part_1 hr {
+    margin-top: 15%;
+    background-color: orange;
+    width: 25%;
+    height: 0.2%;
+    border-radius: 50px;
+    margin-bottom: 8%;
+}
+.part_1 h2 {
+    color: rgba(255, 255, 255, 0.767);
+    font-size: 55px;
+}
+.part_1 .second {
+    color: rgba(255, 255, 255, 0.767);
+}
+.part_2 {
+    
+    margin-top: -10%;
+}
+.container {
+    margin-top: 16%;
+}
+.connex{
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.767);
+}
+.form-control {
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.404);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.name-lable {
+    position: absolute;
+    top: 0.6rem;
+    right: 1.2rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.1rem;
+    transition: all 0.4s;
+    padding-inline: 0.25rem;
+}
+.form-control:focus~.name-lable,.form-control:valid~.name-lable{
+    color: rgba(255, 255, 255, 0.541);
+    font-size: 19px;
+    top: -2.2rem;
+    right: 1.7rem;
+}
+.first-card{
+    width: 100%;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.308);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 0.1px solid rgba(255, 255, 255, 0.767);
+    text-align: center;
+    margin: auto;
+    border-top-left-radius: 3%;
+    border-bottom-right-radius: 3% ;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.432);
+}
+.custom-select {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.404);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#note {
+    color: yellow;
+    font-size: 16px;
+}
+/***************** end *****************/
+
+
+
+
+
+
+
+/***************Login***************/
+.section_1 {
+    margin-top: 2%;
+    text-align: right;
+}
+.section_1 hr {
+    margin-top: 15%;
+    background-color: orange;
+    width: 25%;
+    height: 0.4%;
+    border-radius: 50px;
+    margin-bottom: 8%;
+}
+.section_1 h2 {
+    color: rgba(255, 255, 255, 0.767);
+    font-size: 55px;
+}
+.section_1 .tow {
+    color: rgba(255, 255, 255, 0.767);
+}
+.container_first_page {
+    margin-top: 16%;
+}
+.connex{
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.767);
+}
+.form-control {
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.404);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.name-lable {
+    position: absolute;
+    top: 0.6rem;
+    right: 1.2rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.1rem;
+    transition: all 0.4s;
+    padding-inline: 0.25rem;
+}
+.form-control:focus~.name-lable,.form-control:valid~.name-lable{
+    color: rgba(255, 255, 255, 0.541);
+    font-size: 19px;
+    top: -2.5rem;
+    right: 1.7rem;
+}
+.first-card{
+    width: 100%;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.308);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 0.1px solid rgba(255, 255, 255, 0.767);
+    text-align: center;
+    margin: auto;
+    border-top-left-radius: 3%;
+    border-bottom-right-radius: 3% ;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.432);
+}
+.first-card .description {
+    color: rgba(0, 0, 0, 0.829);
+}
+.custom-select {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.404);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/***************** end *****************/
+
+
+
+/**************click_to_top*****************/
+.top i {
+    font-size: 50px;}
+.top {
+    color: rgba(255, 255, 255, 0.767);
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s ease-in-out;
+    text-shadow: 4px 4px 6px black;
+}
+.top:hover {
+    transform: translateY(-13px);
+}
+.top.show {
+    display: block;
+}
+@media (max-width: 920px) {
+    .top {
+        font-size: 55px;
+        color: rgba(255, 255, 255, 0.767);
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        cursor: pointer;
+        display: none;
+        transition: 0.5s ease-in-out;
+        text-shadow: 4px 4px 6px black;
+    }
+}
+/**************end*****************/
